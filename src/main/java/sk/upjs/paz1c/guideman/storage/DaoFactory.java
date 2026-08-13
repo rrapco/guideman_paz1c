@@ -52,8 +52,8 @@ public enum DaoFactory {
 	private JdbcTemplate getJdbcTemplate() {
 		if (jdbcTemplate == null) {
 			MysqlDataSource dataSource = new MysqlDataSource();
-			dataSource.setUser("guideman");
-			dataSource.setPassword("guideman2022");
+			dataSource.setUser(""); // vymazane
+			dataSource.setPassword(""); // vymazane
 			if (testing) {
 				dataSource.setUrl("jdbc:mysql://localhost/guideman_test?serverTimezone=Europe/Bratislava");
 			} else { 
