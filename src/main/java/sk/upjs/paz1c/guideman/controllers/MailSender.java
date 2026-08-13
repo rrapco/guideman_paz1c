@@ -11,8 +11,8 @@ import javax.mail.internet.MimeMultipart;
 public class MailSender {
 
 	public static void send() {
-		final String login = "guidemanupjs2022@gmail.com";
-		final String password = "Guideman123.";
+		// vymazane meno a heslo
+		
 
 		System.setProperty("mail.smtp.ssl.protocols", "TLSv1.2");
 		Properties prop = new Properties();
