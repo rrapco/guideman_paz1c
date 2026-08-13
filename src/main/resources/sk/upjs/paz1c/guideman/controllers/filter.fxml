@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="630.0" stylesheets="@reviews.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ComboBox fx:id="filterByCountryComboBox" layoutX="79.0" layoutY="143.0" prefHeight="36.0" prefWidth="210.0" style="-fx-background-color: khaki;" />
+      <ComboBox fx:id="filterByMonthComboBox" layoutX="80.0" layoutY="231.0" prefHeight="36.0" prefWidth="210.0" style="-fx-background-color: khaki;" />
+      <ComboBox fx:id="filterByGuidemanComboBox" layoutX="80.0" layoutY="312.0" prefHeight="36.0" prefWidth="210.0" style="-fx-background-color: khaki;" />
+      <Label layoutX="50.0" layoutY="50.0" text="Filters :" textFill="#699a1e">
+         <font>
+            <Font name="Helvetica" size="40.0" />
+         </font>
+      </Label>
+      <Slider fx:id="filterByPriceSlider" layoutX="359.0" layoutY="85.0" majorTickUnit="10.0" orientation="VERTICAL" prefHeight="307.0" prefWidth="16.0" showTickLabels="true" showTickMarks="true" />
+      <Label layoutX="318.0" layoutY="65.0" text="(100€ or more)" />
+      <Label layoutX="422.0" layoutY="197.0" text="Filter by price (€) :">
+         <font>
+            <Font name="Helvetica" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="priceLabel" layoutX="480.0" layoutY="245.0" prefHeight="44.0" prefWidth="63.0" text="0" textFill="#699a1e">
+         <font>
+            <Font name="Helvetica" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="saveAndFilterButton" layoutX="438.0" layoutY="373.0" mnemonicParsing="false" onAction="#saveAndFilterButtonAction" style="-fx-background-color: yellowgreen;" text="Save and filter">
+         <font>
+            <Font name="Helvetica" size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="80.0" layoutY="293.0" text="Filter by Guideman :">
+         <font>
+            <Font name="Helvetica" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="212.0" text="Filter by month :">
+         <font>
+            <Font name="Helvetica" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="123.0" text="Filter by country:">
+         <font>
+            <Font name="Helvetica" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

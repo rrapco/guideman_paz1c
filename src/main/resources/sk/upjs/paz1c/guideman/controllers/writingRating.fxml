@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="630.0" stylesheets="@reviews.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="57.0" layoutY="69.0" text="Please, rate this tour :" textFill="#699a1e">
+         <font>
+            <Font name="Helvetica" size="20.0" />
+         </font></Label>
+      <RadioButton fx:id="zeroRadioButton" layoutX="65.0" layoutY="121.0" mnemonicParsing="false" onAction="#zeroRadioButtonAction" prefHeight="25.0" prefWidth="45.0" text="0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="oneRadioButton" layoutX="139.0" layoutY="122.0" mnemonicParsing="false" onAction="#oneRadioButtonAction" text="1">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="twoRadioButton" layoutX="212.0" layoutY="122.0" mnemonicParsing="false" onAction="#twoRadioButtonAction" text="2">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="threeRadioButton" layoutX="287.0" layoutY="122.0" mnemonicParsing="false" onAction="#threeRadioButtonAction" text="3">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="fourRadioButton" layoutX="364.0" layoutY="122.0" mnemonicParsing="false" onAction="#fourRadioButtonAction" text="4">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="fiveRadioButton" layoutX="442.0" layoutY="122.0" mnemonicParsing="false" onAction="#fiveRadioButtonAction" text="5">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="56.0" layoutY="226.0" text="Let us know, how was your experience :" textFill="#699a1e">
+         <font>
+            <Font name="Helvetica" size="20.0" />
+         </font></Label>
+      <Button fx:id="saveReviewButton" layoutX="442.0" layoutY="376.0" mnemonicParsing="false" onAction="#saveReviewButtonAction" style="-fx-background-color: yellowgreen;" text="Save review">
+         <font>
+            <Font name="Helvetica" size="20.0" />
+         </font></Button>
+      <Label layoutX="279.0" layoutY="73.0" text="(5 means the best)" />
+      <TextArea fx:id="reviewTextArea" layoutX="53.0" layoutY="265.0" prefHeight="89.0" prefWidth="526.0" promptText="click and write">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="saveRatingButton" layoutX="450.0" layoutY="176.0" mnemonicParsing="false" onAction="#saveRatingButtonAction" style="-fx-background-color: yellowgreen;" text="Save rating">
+         <font>
+            <Font name="Helvetica" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

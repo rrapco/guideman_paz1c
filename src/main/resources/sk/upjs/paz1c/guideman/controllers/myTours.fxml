@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" stylesheets="@mainScene.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="myProfileButton" mnemonicParsing="false" onAction="#myProfileButtonAction" prefHeight="50.0" prefWidth="225.0" style="-fx-background-color: yellowgreen;" text="My Profile">
+         <font>
+            <Font name="Helvetica" size="20.0" />
+         </font></Button>
+      <Button fx:id="myToursButton" layoutX="225.0" mnemonicParsing="false" onAction="#myToursButtonAction" prefHeight="50.0" prefWidth="225.0" style="-fx-background-color: yellowgreen;" text="My Tours">
+         <font>
+            <Font name="Helvetica" size="20.0" />
+         </font></Button>
+      <Button fx:id="searchTourButton" layoutX="450.0" mnemonicParsing="false" onAction="#searchTourButtonAction" prefHeight="50.0" prefWidth="225.0" style="-fx-background-color: yellowgreen;" text="Search Tour">
+         <font>
+            <Font name="Helvetica" size="20.0" />
+         </font></Button>
+      <Button fx:id="createTourButton" layoutX="675.0" mnemonicParsing="false" onAction="#createTourButtonAction" prefHeight="50.0" prefWidth="225.0" style="-fx-background-color: yellowgreen;" text="Create Tour">
+         <font>
+            <Font name="Helvetica" size="20.0" />
+         </font></Button>
+      <Button fx:id="logOutButton" layoutX="768.0" layoutY="581.0" mnemonicParsing="false" onAction="#logOutButtonAction" style="-fx-background-color: yellowgreen;" text="Log out">
+         <font>
+            <Font name="Helvetica" size="20.0" />
+         </font></Button>
+      <Label fx:id="myToursLabel" layoutX="80.0" layoutY="110.0" text="My Tours" textFill="#699a1e">
+         <font>
+            <Font name="Helvetica" size="40.0" />
+         </font></Label>
+      <ListView fx:id="toursListView" layoutX="78.0" layoutY="214.0" prefHeight="290.0" prefWidth="744.0" />
+      <CheckBox fx:id="pastToursCheckBox" layoutX="84.0" layoutY="166.0" mnemonicParsing="false" onAction="#pastToursChecked" prefHeight="35.0" prefWidth="130.0" text="Past tours">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="futureToursCheckBox" layoutX="289.0" layoutY="167.0" mnemonicParsing="false" onAction="#futureToursChecked" prefHeight="35.0" prefWidth="130.0" text="Future tours">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="toursWhereIAmGuidemanCheckBox" layoutX="511.0" layoutY="166.0" mnemonicParsing="false" onAction="#toursWhereIAmGuidemanChecked" prefHeight="35.0" prefWidth="248.0" text="Tours where I am a Guideman">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="showTourButton" layoutX="261.0" layoutY="581.0" mnemonicParsing="false" onAction="#showTourButtonAction" prefHeight="38.0" style="-fx-background-color: khaki;" text="Show tour">
+         <font>
+            <Font name="Helvetica" size="18.0" />
+         </font></Button>
+      <Button fx:id="signOffOfTourButton" layoutX="598.0" layoutY="581.0" mnemonicParsing="false" onAction="#signOffOfTourButtonAction" prefHeight="38.0" style="-fx-background-color: yellowgreen;" text="Sign off the tour">
+         <font>
+            <Font name="Helvetica" size="18.0" />
+         </font></Button>
+      <Button fx:id="addRatingOrReviewButton" layoutX="391.0" layoutY="581.0" mnemonicParsing="false" onAction="#addRatingOrReviewButtonAction" prefHeight="38.0" style="-fx-background-color: khaki;" text="Add rating or review">
+         <font>
+            <Font name="Helvetica" size="18.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

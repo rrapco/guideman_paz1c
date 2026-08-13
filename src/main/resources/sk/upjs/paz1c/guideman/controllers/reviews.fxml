@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="630.0" stylesheets="@reviews.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ListView fx:id="reviewsListView" layoutX="43.0" layoutY="136.0" prefHeight="253.0" prefWidth="544.0" />
+      <Label fx:id="reviewsLabel" layoutX="50.0" layoutY="50.0" text="Reviews :" textFill="#699a1e">
+         <font>
+            <Font name="Helvetica" size="40.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

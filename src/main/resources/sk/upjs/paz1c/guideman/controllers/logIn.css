@@ -1,0 +1,17 @@
+.root {
+	-fx-background-image: url("logInTemplate.png");
+	-fx-background-repeat: no-repeat;
+}
+
+.button{
+-fx-background-color: linear-gradient(#f2f2f2, #d6d6d6),
+linear-gradient(#fcfcfc 0%, #d9d9d9 20%, #d6d6d6 100%),
+linear-gradient(#dddddd 0%, #f6f6f6 50%);
+-fx-background-insets: 0,1,2;
+-fx-text-fill: black;
+}
+
+
+.button:hover{
+-fx-background-color: linear-gradient(from 0% 93% to 0% 100%, #e66a27 0%, #903b12 100%),#9d4024, #d86e3a, radial-gradient(center 50% 50%, radius 100%, #e08938, #c54e2c) !important; 
+}
